@@ -1,0 +1,188 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                     FINANBLUE - GUÍA RÁPIDA                               ║
+║            Gestión de Finanzas Personales 100% Frontend                   ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+📌 COMENZAR EN 3 PASOS:
+
+1. npm install
+   Instala todas las dependencias necesarias
+
+2. npm run dev
+   Inicia el servidor de desarrollo en http://localhost:5173/
+
+3. ¡Listo! 
+   La app se abre con datos de ejemplo
+
+═══════════════════════════════════════════════════════════════════════════
+
+💰 CARACTERÍSTICAS PRINCIPALES:
+
+✓ Dashboard interactivo con gráficos
+✓ Registra ingresos y gastos
+✓ Presupuestos con alertas automáticas
+✓ Metas de ahorro personalizables
+✓ Estadísticas completas
+✓ Responsivo: Desktop, Tablet, Mobile
+✓ Datos guardados localmente (sin servidor)
+
+═══════════════════════════════════════════════════════════════════════════
+
+🗂️ ESTRUCTURA:
+
+src/components/       → Componentes React reutilizables
+src/pages/           → Páginas principales (Dashboard, etc.)
+src/context/         → Estado global (AppContext)
+src/services/        → LocalStorage API
+src/utils/           → Funciones auxiliares
+src/types/           → Tipos TypeScript
+src/data/            → Datos mock iniciales
+
+═══════════════════════════════════════════════════════════════════════════
+
+🎯 FUNCIONALIDADES:
+
+📊 Dashboard
+   - Balance disponible
+   - Gastos vs Ingresos (gráfico)
+   - Presupuestos al día
+   - Últimos movimientos
+   - Metas de ahorro
+
+💳 Movimientos
+   - Crear ingreso/gasto
+   - Editar
+   - Eliminar
+   - Buscar y filtrar
+
+📈 Estadísticas
+   - Ingresos vs Gastos (línea)
+   - Gastos por categoría (donut)
+   - Gastos por método de pago
+   - 3, 6, 12 meses
+
+💰 Presupuestos
+   - Crear por categoría
+   - Ver progreso
+   - Alertas (50%, 75%, 90%, 100%)
+
+🎯 Metas
+   - Crear meta de ahorro
+   - Personalizar iconos y colores
+   - Seguimiento visual
+   - Alertas de plazo
+
+═══════════════════════════════════════════════════════════════════════════
+
+🛠️ COMANDOS:
+
+npm run dev          → Inicia servidor desarrollo
+npm run build        → Compila para producción
+npm run preview      → Previsualiza el build
+npm run lint         → Verifica errores
+
+═══════════════════════════════════════════════════════════════════════════
+
+💾 DATOS:
+
+Todos se guardan en LocalStorage:
+- finanblue_transactions
+- finanblue_budgets
+- finanblue_goals
+- finanblue_categories
+- finanblue_payment_methods
+- finanblue_profile
+
+Abre DevTools (F12) → Storage → LocalStorage para ver datos
+
+═══════════════════════════════════════════════════════════════════════════
+
+🎨 TECNOLOGÍAS:
+
+React 19        - Framework UI
+TypeScript 5    - Lenguaje tipado
+Vite 8          - Bundler
+Tailwind CSS 3  - Estilos
+React Router 7  - Navegación
+Recharts 3      - Gráficos
+Lucide React 1  - Iconos
+
+═══════════════════════════════════════════════════════════════════════════
+
+📱 RESPONSIVO:
+
+Desktop (1440px+)  → Sidebar + Multi-columnas
+Tablet (768px)     → Adaptable
+Mobile (375px+)    → Bottom navigation + Vertical
+
+═══════════════════════════════════════════════════════════════════════════
+
+🔐 PRIVACIDAD:
+
+✓ 100% Frontend - Sin backend
+✓ Sin servidor externo
+✓ Sin base de datos
+✓ Sin Firebase/Supabase
+✓ Datos guardados localmente
+✓ Funciona offline
+✓ Sin publicidad
+
+═══════════════════════════════════════════════════════════════════════════
+
+📄 DOCUMENTACIÓN:
+
+README.md              → Descripción completa
+INICIO.md              → Instrucciones de uso
+VERIFICACION.md        → Cumplimiento de especificaciones
+RESUMEN_DESARROLLO.md  → Detalle del desarrollo
+GUIA_RAPIDA.txt        → Este archivo
+
+═══════════════════════════════════════════════════════════════════════════
+
+🚀 DEPLOYMENT:
+
+Para producción:
+$ npm run build
+
+Luego deploy a:
+- Netlify (recomendado)
+- Vercel
+- GitHub Pages
+- Firebase Hosting
+- AWS S3
+- Cualquier servidor estático
+
+═══════════════════════════════════════════════════════════════════════════
+
+❓ PREGUNTAS FRECUENTES:
+
+P: ¿Dónde se guardan mis datos?
+R: En LocalStorage del navegador. Solo tú los ves.
+
+P: ¿Necesito crear cuenta?
+R: No. Funciona sin registro.
+
+P: ¿Funciona sin internet?
+R: Sí, 100% offline.
+
+P: ¿Es seguro?
+R: Sí. Tus datos nunca salen del navegador.
+
+P: ¿Puedo borrar datos?
+R: Sí. Abre DevTools y limpia LocalStorage.
+
+═══════════════════════════════════════════════════════════════════════════
+
+📞 CONTACTO:
+
+Email: contacto@finanblue.com
+GitHub: github.com/finanblue
+Web: finanblue.com
+
+═══════════════════════════════════════════════════════════════════════════
+
+✅ ESTATUS: COMPLETO Y LISTO PARA USAR
+
+¡Disfrutá de FinanBlue! 💰✨
+
+═══════════════════════════════════════════════════════════════════════════
