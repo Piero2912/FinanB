@@ -37,7 +37,7 @@ export const Modal: React.FC<ModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-end md:items-center justify-center">
+    <div className="fixed inset-0 z-50 flex items-end md:items-center justify-center overflow-hidden">
       {/* Backdrop */}
       <div
         className="absolute inset-0 bg-black bg-opacity-50 transition-opacity duration-200"
@@ -46,11 +46,11 @@ export const Modal: React.FC<ModalProps> = ({
 
       {/* Modal */}
       <div
-        className={`relative bg-white rounded-t-lg md:rounded-lg shadow-lg w-full ${sizeClasses[size]} mx-4 md:mx-0 animate-in fade-in slide-in-from-bottom-5 md:slide-in-from-center md:zoom-in-95 duration-200`}
+        className={`relative bg-white rounded-t-lg md:rounded-lg shadow-lg w-full ${sizeClasses[size]} mx-4 md:mx-0 animate-in fade-in slide-in-from-bottom-5 md:slide-in-from-center md:zoom-in-95 duration-200 max-h-[90vh] md:max-h-[85vh] flex flex-col`}
       >
         {/* Header */}
         {title && (
-          <div className="flex items-center justify-between p-4 md:p-6 border-b border-neutral-200">
+          <div className="flex items-center justify-between p-4 md:p-6 border-b border-neutral-200 flex-shrink-0">
             <h2 className="text-lg font-semibold text-neutral-900">{title}</h2>
             <button
               onClick={onClose}
@@ -62,11 +62,11 @@ export const Modal: React.FC<ModalProps> = ({
         )}
 
         {/* Content */}
-        <div className="p-4 md:p-6">{children}</div>
+        <div className="p-4 md:p-6 overflow-y-auto flex-grow">{children}</div>
 
         {/* Footer */}
         {footer && (
-          <div className="p-4 md:p-6 border-t border-neutral-200 flex gap-3 justify-end">
+          <div className="p-4 md:p-6 border-t border-neutral-200 flex gap-3 justify-end flex-shrink-0">
             {footer}
           </div>
         )}
